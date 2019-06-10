@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nodemailer Email Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container"><br />
+      <h1>Send The Email</h1><br />
+      <form id="myform" onsubmit="return extraSlowJob()" form action="/sendDelayedEmail" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="to">To:</label>
+            <input type="email" class="form-control" name="to">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="subject">Subject:</label>
+            <input type="text" class="form-control" name="subject">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="body">Body:</label>
+              <textarea cols="5" rows="5"class="form-control" name="body"></textarea>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="subject">Select a file: </label>
+            <input type="file" name="myFile">
+          </div>
+        </div>
+
+       
+       
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+                <button type="submit" class="btn btn-success">Send</button>
+           
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
